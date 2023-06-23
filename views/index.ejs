@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: sans-serif;
+        background-image: linear-gradient(120deg, #ff6b6b, #5f27cd);
+        min-height: 100vh;
+      }
+      .container {
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px #ee5253;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .text {
+        text-align: left;
+        margin-left: 150px;
+      }
+      #u_password,
+      #u_email {
+        color: #222f3e;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 200;
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #341f97;
+        width: 200px;
+      }
+      .btn {
+        font-family: inherit;
+        margin-top: 20px;
+        border: none;
+        color: #fff;
+        background-image: linear-gradient(120deg, #ff6b6b, #5f27cd);
+        width: 150px;
+        padding: 10px;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+      }
+      .btn a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+      }
+      .btn:hover {
+        box-shadow: 1px 1px 10px #341f97;
+      }
+      .btn1 {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <div class="container">
+        <h1>Login page</h1>
+
+        <tr>
+          <p class="text">Email:-</p>
+          <td>
+            <input type="email" name="email" id="u_email" />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <p class="text">password:-</p>
+          <td>
+            <input type="password" name="password" id="u_password" />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td>
+            <input type="submit" value="login" name="login" class="btn btn1" />
+          </td>
+        </tr>
+        <br />
+
+        <a href="/register" target="_blank">
+          <h3>If you dont have account click here?</h3>
+        </a>
+      </div>
+    </form>
+  </body>
+</html>
